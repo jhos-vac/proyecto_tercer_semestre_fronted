@@ -1,0 +1,88 @@
+.imagenFondo{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height: 711px;
+}
+.Fondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(81, 109, 129, 0.70);
+}
+.contenLogin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background: #121212c4;
+    width: 528px;
+    height: 617px;
+    flex-shrink: 0;
+}
+.textLogin{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-weight: 500;
+}
+.inputLogin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 270px;
+    border-radius: 11px;
+    background: #12121200;
+    border: 2px solid rgb(129 88 239);
+    color: rgb(129 88 239);
+    font-weight: 600;
+    padding-left: 13px;
+}
+
+.inputPassword{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 270px;
+    border-radius: 11px;
+    background: #12121200;
+    border: 2px solid rgb(129 88 239);
+    color: rgb(129 88 239);
+    font-weight: 600;
+    padding-left: 13px;
+}
+.buttonLogin{
+    position: absolute;
+    top: 71%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 135px;
+    border-radius: 11px;
+    border: 2px solid rgb(129 88 239);
+    font-weight: 600;
+    padding-left: 13px;
+    background: rgb(129 88 239);
+}
+.buttonRegister{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 135px;
+    border-radius: 11px;
+    border: 2px solid rgb(129 88 239);
+    font-weight: 600;
+    padding-left: 13px;
+    background: rgb(129 88 239);
+}
+
