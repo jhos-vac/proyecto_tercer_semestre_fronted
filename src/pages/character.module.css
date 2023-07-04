@@ -1,0 +1,13 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px 10px;
+
+}
+.buttonAgregar{
+    background-color: #0000003b;
+    width: 100%;
+    height: 75px;
+    margin-top: 50px;
+    border-radius: 28px;
+}

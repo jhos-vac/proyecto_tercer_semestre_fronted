@@ -7,9 +7,16 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+const timePass = Date.now();
+const today = new Date(timePass);
+
+
+
 root.render(
   <React.StrictMode>
-    <App />
+{/*<h1>TIME: {today.toUTCString()}</h1>*/}
+<App></App>
   </React.StrictMode>
 );
 
