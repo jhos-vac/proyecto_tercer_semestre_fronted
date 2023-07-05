@@ -57,12 +57,12 @@ const { Header, Sider, Content} = Layout;
                         {
                             key: '2',
                             icon: <UserOutlined />,
-                            label: (<NavLink to="/character">Usuairos</NavLink>),
+                            label: (<NavLink to="/Users">Usuairos</NavLink>),
                         },
                         {
                             key: '3',
                             icon: <GlobalOutlined />,
-                            label: (<NavLink to="/localizations">Proyectos</NavLink>),
+                            label: (<NavLink to="/Projects">Projectos</NavLink>),
                         },
 
                     ]}

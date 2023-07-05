@@ -4,18 +4,18 @@ import { Card } from 'antd';
 const { Meta } = Card;
 
 type CardType = {
-    name:string,
-    image?:string,
-    description:string
+    fullname:string,
+    email:string,
+    contact:string
 }
 
-const UserCard: React.FC <CardType> = ({name,image, description}:CardType) => (
+const UserCard: React.FC <CardType> = ({fullname,email, contact}:CardType) => (
     <Card
         hoverable
         style={{ width: 200, marginBottom: "30px" }}
         cover={<img alt="example" src="https://secrecyjewels.es/blog/wp-content/uploads/2022/10/esencia-de-una-persona.jpg" />}
     >
-        <Meta title={name} description={description} />
+        <Meta title={fullname} description={contact} />
     </Card>
 );
 
