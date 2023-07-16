@@ -1,18 +1,17 @@
 import './App.css';
 import RootLayout from "./layouts/RootLayout";
 import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from "react-router-dom";
-import {Users} from "./pages/Users";
 import {NotFound} from "./pages/NotFound";
-import {Projects} from "./pages/Projects";
 import React from "react";
+import {Project} from "./pages/Project";
+
 
 
 const router = createBrowserRouter(
     createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-        <Route index element={<Users />}/>
-        <Route path='users' element={<Users />}/>
-        <Route path='projects' element={<Projects />}/>
+        <Route index element={<Project />}/>
+        <Route path='project' element={<Project/>}/>
         <Route path="*" element={<NotFound />}/>
     </Route>
 ))

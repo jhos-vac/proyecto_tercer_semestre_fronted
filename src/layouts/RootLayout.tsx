@@ -55,21 +55,16 @@ const { Header, Sider, Content} = Layout;
                     defaultSelectedKeys={['1']}
                     items={[
                         {
-                            key: '2',
-                            icon: <UserOutlined />,
-                            label: (<NavLink to="/Users">Usuairos</NavLink>),
-                        },
-                        {
-                            key: '3',
+                            key: '1',
                             icon: <GlobalOutlined />,
-                            label: (<NavLink to="/Projects">Projectos</NavLink>),
+                            label: (<NavLink to="/Project">Projectos</NavLink>),
                         },
 
                     ]}
                 />
 
             </Sider>
-            <Layout className={styles.siteLayout} style={{background:"#ffffff"}}>
+            <Layout className={styles.siteLayout} style={{background:"#1F272D"}}>
                 <Header style={{ padding: 0, background: "#070707" }}>
 
                     <Space>
@@ -87,40 +82,11 @@ const { Header, Sider, Content} = Layout;
                                 margin: '24px 16px',
                                 padding: 24,
                                 minHeight: 280,
-                                width: "75%",
+                                width: "95%",
                                 color: "white",
                             }}
                         >
                             <Outlet />
-
-                        </Content>
-
-                        <Content
-                            style={{
-                                display: "inline-block",
-                                margin: '24px 16px',
-                                padding: 24,
-                                minHeight: 100,
-                                background: "rgb(12 12 12 / 50%)",
-                                width: "17%",
-                                height:"80%",
-                                color: "white",
-                                borderRadius:"10px",
-                                position:"absolute",
-                            }}
-                        >
-                            <p>Opciones</p>
-                            <div>
-                                <Dropdown menu={{ items }} placement="bottomLeft" arrow>
-                                    <Button>bottomLeft</Button>
-                                </Dropdown>
-                            </div>
-
-                            <div>
-                                <Dropdown menu={{ items }} placement="bottom" arrow>
-                                    <Button>bottom</Button>
-                                </Dropdown>
-                            </div>
 
                         </Content>
 

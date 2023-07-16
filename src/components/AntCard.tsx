@@ -9,6 +9,7 @@ type CardType = {
 }
 
 const AntCard:React.FC<CardType> = ({title,description}:CardType) => (
+
     <Card
         style={{ width: 215, marginTop:"10px", border:"solid 1px gray" }}
         cover={
