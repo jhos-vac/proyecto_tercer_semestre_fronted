@@ -3,24 +3,18 @@ import './StyleCss/loginStyle.css';
 import { Button } from 'antd';
 
 function Login() {
-    // Agregar estados para el valor de UserName y Password
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
-
-    // Funciones para manejar los cambios en los inputs
     const handleUserNameChange = (event:any) => {
         setUserName(event.target.value);
     };
-
     const handlePasswordChange = (event:any) => {
         setPassword(event.target.value);
     };
 
     const handleLoginClick = () => {
-        // Lógica para manejar el click en el botón de Login
-        // Aquí puedes enviar los datos del usuario a tu backend para autenticar
-    };
 
+    };
     return (
         <>
             <img
@@ -54,5 +48,4 @@ function Login() {
         </>
     );
 }
-
 export default Login;
