@@ -1,39 +1,49 @@
 import useSWR from 'swr';
 import ListProject from "../components/ListProject";
-import {fetchData, project} from "../services/Service";
+import {fetchData, ViewProject} from "../services/Service";
+import Addproject from "../components/Addproject";
 
-export interface ProjectData {
+
+export interface ViewProjectData {
     id: number;
-    idUsers: number;
     title: string;
-    budget: number;
+    estimate: number;
     description: string;
-    startDate: Date | null;
-    users: string;
+    estimatedTime: string;
+    workLevel: string;
+    typeWork: string;
+    skills: {
+        id: number;
+        idProject: number;
+        description: string;
+    }[];
 }
 
 export const Project: React.FC = () => {
-    const { data, error } = useSWR<ProjectData[]>(project, fetchData, {
+    const { data, error } = useSWR<ViewProjectData[]>(ViewProject, fetchData, {
         suspense: false,
     });
-
     return (
         <>
-            <h1 style={{ color: "aliceblue" }}>Proyectos</h1>
+            <h1 style={{ color: "aliceblue" }}>Projects</h1>
             <div>
-                {data?.map((dataProject) => (
+                <Addproject></Addproject>
+                {data?.map((dataProject,) => (
                     <ListProject
                         key={dataProject.id}
                         id={dataProject.id}
-                        idUsers={dataProject.idUsers}
                         title={dataProject.title}
-                        budget={dataProject.budget}
+                        estimate={dataProject.estimate}
                         description={dataProject.description}
-                        startDate={dataProject.startDate}
-                        users={dataProject.users}
+                        estimatedTime={dataProject.estimatedTime}
+                        workLevel={dataProject.workLevel}
+                        typeWork={dataProject.typeWork}
+                        skills = {dataProject.skills}
                     />
                 ))}
+
             </div>
+
         </>
     );
 };

@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import {
     MenuFoldOutlined,
     MenuUnfoldOutlined,
-    UserOutlined,
     GlobalOutlined,
 } from '@ant-design/icons';
-import {Button, Dropdown, Layout, Menu, MenuProps, theme} from 'antd';
+import {Layout, Menu, MenuProps, theme} from 'antd';
 import styles from './root-layout.module.css'
 import {Space} from "antd/lib";
 import {NavLink, Outlet} from "react-router-dom";
@@ -57,7 +56,7 @@ const { Header, Sider, Content} = Layout;
                         {
                             key: '1',
                             icon: <GlobalOutlined />,
-                            label: (<NavLink to="/Project">Projectos</NavLink>),
+                            label: (<NavLink to="/Project">Projects</NavLink>),
                         },
 
                     ]}

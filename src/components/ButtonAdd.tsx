@@ -12,21 +12,30 @@ interface Option {
 }
 const options: Option[] = [
     {
-        label: 'Light',
-        value: 'light',
+        label: 'Design',
+        value: 'Design',
+
     },
     {
-        label: 'Bamboo',
-        value: 'bamboo',
+        label: 'Web development',
+        value: 'Web development',
     },
     {
-        label: 'cooking',
-        value: 'cooking',
+        label: 'Marketing',
+        value: 'Marketing',
+    },
+    {
+        label: 'Tourism',
+        value: 'Tourism',
+    },
+    {
+        label: 'Nursing',
+        value: 'Nursing',
     },
 ];
 
 
-const Apply: React.FC = () => {
+const Adduser: React.FC = () => {
     const [open, setOpen] = useState(false);
 
     const onChangeSkill = (value: string[]) => {
@@ -47,7 +56,7 @@ const Apply: React.FC = () => {
             </Button>
 
             <Drawer
-                title="Create a new account"
+                title="Apply"
                 width={720}
                 onClose={onClose}
                 open={open}
@@ -123,27 +132,10 @@ const Apply: React.FC = () => {
                             </Form.Item>
                         </Col>
                     </Row>
-
-                    <Row gutter={16}>
-                        <Col span={24}>
-                            <Form.Item
-                                name="description"
-                                label="Description"
-                                rules={[
-                                    {
-                                        required: true,
-                                        message: 'please enter url description',
-                                    },
-                                ]}
-                            >
-                                <Input.TextArea rows={4} placeholder="please enter url description" />
-                            </Form.Item>
-                        </Col>
-                    </Row>
                 </Form>
             </Drawer>
         </>
     );
 };
 
-export default Apply;
+export default Adduser;
