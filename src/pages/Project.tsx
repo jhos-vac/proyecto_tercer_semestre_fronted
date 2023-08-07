@@ -16,6 +16,14 @@ export interface ViewProjectData {
         id: number;
         idProject: number;
         description: string;
+        users:{
+            id:number;
+            fullname:string;
+            email:string;
+            contact:string;
+            states:string;
+            idSkill: number;
+        }[];
     }[];
 }
 
@@ -23,6 +31,7 @@ export const Project: React.FC = () => {
     const { data, error } = useSWR<ViewProjectData[]>(ViewProject, fetchData, {
         suspense: false,
     });
+
     return (
         <>
             <h1 style={{ color: "aliceblue" }}>Projects</h1>

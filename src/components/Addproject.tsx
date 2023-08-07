@@ -150,13 +150,12 @@ const Addproject: React.FC = () => {
                                 rules={[{ required: true, message: 'Please select a Type Work' }]}
                             >
                                 <Select placeholder="Please select a Type Work">
-                                    <Option value="practical">Practical</Option>
-                                    <Option value="theoretical">Theoretical</Option>
+                                    <Option value="Services">Services</Option>
+                                    <Option value="Tutorships">Tutorships</Option>
                                 </Select>
 
                             </Form.Item>
                         </Col>
-
                     </Row>
                     <Row gutter={16}>
                         <Col span={24}>
