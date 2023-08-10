@@ -79,7 +79,7 @@ const ListProject: React.FC<ListProjectProps> = ({ id, title,estimate, descripti
                         <List.Item.Meta
                             avatar={<Avatar src="https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png" />}
                             title={<a href="">{item.title}</a>}
-                            description={item.description}
+                            description={item.description.slice(0,60)}
                         />
                     </List.Item>
 
@@ -139,7 +139,7 @@ const ListProject: React.FC<ListProjectProps> = ({ id, title,estimate, descripti
                 </Row>
 
                 <Divider />
-                <p className="site-description-item-profile-p">Users</p>
+                <p className="site-description-item-profile-p">Posit</p>
 
                 <Adduser
                     id={id}
@@ -154,7 +154,7 @@ const ListProject: React.FC<ListProjectProps> = ({ id, title,estimate, descripti
                 <Row>
                     <Col span={24}>
                         <DescriptionItem
-                            title="Users"
+                            title="Applicants"
                             content={
                                 <ListUsers key={id} projectId={id}  skillList={skills}/>}
                         />

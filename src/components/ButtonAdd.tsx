@@ -126,8 +126,6 @@ const Adduser: React.FC<valueSkill> = ({ id, title, estimate, description, estim
                             >
                                 <Input style={{ width: '100%' }}
                                     placeholder="enter email"
-                                    addonAfter="@sudamericano.edu.ec"
-
                                 />
                             </Form.Item>
                         </Col>

@@ -30,11 +30,6 @@ const ListPostulation: React.FC<ListProjectProps> = ({ id, fullname, email, stat
             renderItem={(item) => (
                 <List.Item
                     key={item.id}
-                    actions={[
-                        <a key={`a-${item.id}`}>
-                            ok
-                        </a>,
-                    ]}
                 >
                         <List.Item.Meta
                             avatar={<Avatar src="https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png" />}

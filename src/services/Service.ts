@@ -4,7 +4,7 @@ export const Skill ='http://localhost:8081/skills'
 export const users ='http://localhost:8081/users'
 export const  ViewProject= "http://localhost:8081/projectSkills"
 
-export const fetchData = async (url: string,arg:string) =>{
+export const fetchData = async (url: string) =>{
     const response = await axios.get(url);
     return response.data;
 };
